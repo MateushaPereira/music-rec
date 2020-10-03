@@ -188,7 +188,7 @@
 
     // :: 10.0 audioPlayer Active Code
     //if ($.fn.audioPlayer) {
-     //  $('audio').audioPlayer();
+    //  $('audio').audioPlayer();
     //}
 
     // :: 11.0 Tooltip Active Code
@@ -205,7 +205,7 @@
     if (browserWindow.width() > 767) {
         new WOW().init();
     }
-    
+
     // :: 14.0 Gallery Menu Active Code
     $('.catagory-menu a').on('click', function () {
         $('.catagory-menu a').removeClass('active');
@@ -213,3 +213,15 @@
     })
 
 })(jQuery);
+
+document.querySelector('.navbarToggler').addEventListener("click", () => {
+    document.querySelector('.navbarToggler').classList.toggle('hide')
+})
+
+document.querySelector('.cross-wrap').addEventListener("click", () => {
+    document.querySelector('.navbarToggler').classList.toggle('hide')
+})
+
+document.querySelector('.item-list').addEventListener("click", () => {
+    document.querySelector('.navbarToggler').classList.toggle('hide')
+})
